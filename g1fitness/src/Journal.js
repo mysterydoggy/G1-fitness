@@ -10,7 +10,7 @@ function Journal() {
       <p>Here you can find different workouts for your fitness journey.</p>
             
       <Link to="/">
-        <button className="nav-button">Back Home</button>
+        <button className="nav-button">Home</button>
       </Link>
     </div>
   );
