@@ -9,6 +9,7 @@ import WorkoutCreation from "./Create_Workout";
 import Journal from "./Journal";
 import AboutUs from "./AboutUs";
 import Login from "./login";
+import Signup from "./SignUp";
 import { Link } from "react-router-dom";
 
 
@@ -50,6 +51,7 @@ function App() {
         <Route path="/Journal" element={<Journal/>}/>
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="/Login" element={<Login/>}/>
+        <Route path="/Signup" element={<Signup/>}/>
       </Routes>
     </Router>
   );
