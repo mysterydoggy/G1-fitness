@@ -13,43 +13,43 @@ function Login() {
       };
 
       return (
-        <div className="login-header" style = {{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', height: '100vh' }}>
-          <div className="login-box" style = {{ flexDirection: 'row', gap: '10px'}}>
+        <div className="login-header" style = {{ flexDirection: 'row', justifyContent: 'space-between'}}>
+          <div className="login-box" style = {{margin: '10px'}}>
             <h1>Sign In</h1>
             <p>Please enter your credentials to sign in.</p>
             
             
-            <button className="login-button" style = {{display: 'block', width: '200px', margin: '10px'}}>Sign In with Google</button>
-            <button className="login-button" style = {{display: 'block', width: '200px', margin: '10px'}}>Sign In with Apple</button>
+            <button className="login-button" style = {{display: 'block', width: '200px', margin: '10px 0'}}>Sign In with Google</button>
+            <button className="login-button" style = {{display: 'block', width: '200px', margin:'10px 0'}}>Sign In with Apple</button>
             
             <hr style = {{ margin: '10px 0' }} /> 
 
             <form onSubmit={handleSubmit}>
               <div>
-              <label>Username: </label>
+              <label style={{fontSize: '20px'}}>Username: </label>
               <input
                 type="text"
                 placeholder="Enter username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
-                style = {{ margin: '10'}}
+                style = {{ display: 'block', height: "20px", width: "200px"}}
               />
               </div>
 
               <div>
-              <label>Password: </label>
+              <label style = {{fontSize: '20px'}}>Password: </label>
               <input
                 type="password"
                 placeholder="Enter password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                style = {{ margin: '10px 0' }}
+                style = {{ display: 'block', height: "20px", width: "200px"}}
               />
               </div>
     
-              <button type="submit" className="login-button" style={{display: 'block', margin: "10px 0"}}>Sign In</button>
+              <button type="submit" className="login-button" style={{display: 'block', width: '208px', margin: "20px 0"}}>Sign In</button>
 
             </form>
 
