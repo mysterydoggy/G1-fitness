@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Create_Workout.css"; // Import the updated CSS file
+import "./Create_Workout.css"; 
 
 function WorkoutCreation() {
   const [workoutName, setWorkoutName] = useState("");
@@ -10,8 +10,7 @@ function WorkoutCreation() {
     Legs: [],
   });
   const [activeCategory, setActiveCategory] = useState(null);
-  const [isWorkoutCreated, setIsWorkoutCreated] = useState(false); // New state to toggle content visibility
-
+  const [isWorkoutCreated, setIsWorkoutCreated] = useState(false); 
   const exercises = {
     Chest: ["Push-up", "Bench Press", "Incline Press"],
     Core: ["Sit-up", "Crunches", "Plank"],
@@ -32,12 +31,12 @@ function WorkoutCreation() {
   };
 
   const handleSaveWorkout = () => {
-    // Handle saving the workout routine here
+    // handle saving the workout routine here, needs work
     console.log("Workout Saved:", workoutName, selectedExercises);
   };
 
   const handleCreateWorkout = () => {
-    setIsWorkoutCreated(true); // This will toggle the visibility of the content
+    setIsWorkoutCreated(true); // toggle the visibility of the content
   };
 
   return (
@@ -47,17 +46,17 @@ function WorkoutCreation() {
           <button className="nav-button">Home</button>
         </Link>
 
-      {/* Create Workout Button */}
+      {/* create workout button */}
       {!isWorkoutCreated && (
         <button className="create-workout-button" onClick={handleCreateWorkout}>
           Create Workout
         </button>
       )}
 
-      {/* Content that appears after clicking the "Create Workout" button */}
+      {/* content appears after clicking workout buttn */}
       {isWorkoutCreated && (
         <div className="content-container show">
-          {/* Workout name input */}
+          {/* workout name input */}
           <input
             type="text"
             className="workout-name-input"
@@ -66,7 +65,7 @@ function WorkoutCreation() {
             onChange={(e) => setWorkoutName(e.target.value)}
           />
 
-          {/* Muscle Group Selection */}
+          {/* muscle categories, choice */}
           <div className="muscle-group-buttons">
             {Object.keys(exercises).map((category) => (
               <button
@@ -81,7 +80,7 @@ function WorkoutCreation() {
             ))}
           </div>
 
-          {/* Exercise List for Selected Category */}
+          {/* list by category */}
           {activeCategory && (
             <div className="exercise-list">
               {exercises[activeCategory].map((exercise) => (
@@ -99,7 +98,7 @@ function WorkoutCreation() {
             </div>
           )}
 
-          {/* Save Workout Button */}
+          {/* save button, not functional */}
           <div className="save-button-container">
             <button className="save-button" onClick={handleSaveWorkout}>
               Save Workout
