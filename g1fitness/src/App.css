@@ -11,6 +11,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 .login-header {
   background-color: #282c34;
@@ -83,7 +84,6 @@
 
 .Links {
   color: DodgerBlue;
-  font-size: 18px;
 }
 
 .spinning-video {
@@ -97,6 +97,12 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as necessary */
+  .App-header {
+    min-height: 150vh; /* Example to adjust based on content size */
   }
 }
 

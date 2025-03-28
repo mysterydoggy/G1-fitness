@@ -1,0 +1,33 @@
+.about-title{
+    margin: 10px 0;
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .second-paragraph{
+        margin: 10 0;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+.button{
+    align-items: center;
+    background-color: limegreen;
+    width: 100px; /* Square shape */
+    height: 50px; /* Square shape */
+    font-size: 16px;
+    color: #000000;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.App-header hr{
+    border: 0;
+    height: 2px;
+    background-color: whitesmoke;
+    opacity: 0.2;
+}
+  
