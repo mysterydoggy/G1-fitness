@@ -16,19 +16,19 @@ function Signup() {
     return (
         <div className="login-header">
           <div className="form-box">
-            <h1 className="form-title">Sign Up</h1>
-            <p className="form-header">Please enter your details to create an account.</p>
+            <h1 className="auth-title">Sign Up</h1>
+            <p className="auth-header">Please enter your details to create an account.</p>
             
-            <button className="form-button">Sign Up with Google</button>
-            <button className="form-button">Sign Up with Apple</button>
+            <button className="auth-button">Sign Up with Google</button>
+            <button className="auth-button">Sign Up with Apple</button>
             
             <hr /> 
 
             <form onSubmit={handleSubmit}>
               <div>
-                <label className="form-text">Email:</label>
+                <label className="auth-text">Email:</label>
                 <input
-                  className="form-input"
+                  className="auth-input"
                   type="email"
                   placeholder="Enter email"
                   value={email}
@@ -37,9 +37,9 @@ function Signup() {
                 />
               </div>
               <div>
-                <label className="form-text">Username:</label>
+                <label className="auth-text">Username:</label>
                 <input
-                  className="form-input"
+                  className="auth-input"
                   type="text"
                   placeholder="Choose a username"
                   value={username}
@@ -49,9 +49,9 @@ function Signup() {
               </div>
 
               <div>
-                <label className="form-text">Password:</label>
+                <label className="auth-text">Password:</label>
                 <input
-                  className="form-input"
+                  className="auth-input"
                   type="password"
                   placeholder="Create a password"
                   value={password}
@@ -60,15 +60,15 @@ function Signup() {
                 />
               </div>
     
-              <button type="submit" className="form-button">Create Account</button>
+              <button type="submit" className="auth-button">Create Account</button>
             </form>
 
-            <p style = {{fontSize: "18px"}}>Already have an account? <Link className="form-link" to="/login">Sign In</Link></p>
+            <p style = {{fontSize: "18px"}}>Already have an account? <Link className="Links" to="/login">Sign In</Link></p>
             <Link to="/">
               <button className="nav-button">Home</button>
             </Link>
           </div>
-          <img className="form-logo" src={logo} alt="G1 Fitness Logo" />
+          <img className="logo" src={logo} alt="G1 Fitness Logo" />
         </div>
     );
 }

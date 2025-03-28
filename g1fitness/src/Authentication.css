@@ -1,0 +1,46 @@
+.auth-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.auth-box{
+    margin: 10px;
+}
+
+.auth-title{
+    font-size: 40px;
+}
+
+.auth-button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: limegreen;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-text{
+    font-size: 20px;
+}
+
+.auth-input{
+    display: block;
+    width: 94%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.logo{
+    height: 30vmin;
+}
+
+form-header{
+    margin: 10px 0;
+}   

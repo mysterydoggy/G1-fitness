@@ -81,60 +81,13 @@
   
 }
 
-.spinning-video {
-  animation: spin-video infinite 15s linear; /* Adjust speed */
-}
-
-/* Used for Authentication styling, Login and Sign up JavaScript Files*/
-.form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-.form-box {
-  margin: 10px;
-}
-
-.form-title {
-  font-size: 40px;
-}
-
-.form-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 20px 0;
-  background-color: limegreen;
-  border: none;
-  color: black;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.form-text {
-  font-size: 20px;
-}
-.form-input {
-  display: block;
-  width: 94%;
-  margin: 10px 0;
-  padding: 10px;
-}
-
-.form-link {
+.Links {
   color: DodgerBlue;
   font-size: 18px;
 }
 
-.form-logo {
-  height: 30vmin;
-}
-
-.form-header {
-  margin: 10px 0;
+.spinning-video {
+  animation: spin-video infinite 15s linear; /* Adjust speed */
 }
 
 
