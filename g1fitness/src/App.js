@@ -32,10 +32,9 @@ function HomePage() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <div className="Title"><h1>Welcome to G1 Fitness</h1></div>
-
-        <video width="600" controls autoPlay loop className="spinning-video">
-          <source src={dogVideo} type="video/mp4" />
-        </video>
+          <video width="600" controls autoPlay loop className="spinning-video">
+            <source src={dogVideo} type="video/mp4" />
+          </video>
       </header>
     </div>
   );

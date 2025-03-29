@@ -21,6 +21,7 @@
   color: white;
 }
 .Title {
+  margin-top: 20px;
   position: absolute;
   top: 10px;
 
@@ -31,6 +32,7 @@
   pointer-events: none;
   left: 10px; 
   top: 10px;
+  margin-top: 50px;
   animation: App-logo-spin infinite 20s linear;
 }
 
@@ -87,7 +89,8 @@
 }
 
 .spinning-video {
-  animation: spin-video infinite 15s linear; /* Adjust speed */
+  margin-top: 200px;
+  animation: spin-video infinite 15s linear; /*Adjust speed */
 }
 
 
