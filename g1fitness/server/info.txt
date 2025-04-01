@@ -1,0 +1,8 @@
+current google cloud console data for development:
+http://localhost:8080
+http://localhost:8080/auth/google/callback
+
+Client ID: 756499687833-egs5spbrdf095oelegblol1e6vj8cc79.apps.googleusercontent.com
+
+Client Secret: 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
+

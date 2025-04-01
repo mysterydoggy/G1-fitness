@@ -1,26 +1,34 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("../db"); // Database connection (we'll create this next)
+const sequelize = require("../db"); // database connection
 
-//db definition for user model
+// user model compatible for OAuth2.0
 const User = sequelize.define("User", {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
     },
-    username: {
+    googleId: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
+        unique: true,  // google ID unique for each user
     },
     email: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
     },
-    password: {
+    firstName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true, 
+    },
+    createdAt: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
+    },
+    updatedAt: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
     },
 });
 
